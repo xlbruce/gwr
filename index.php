@@ -1,23 +1,7 @@
 <html>
 <?php 
-	/*23/10/2014 - 08:37
-	 - Inicio da implementação do BD
-	 */
-         /*27/10/2014 - 16:12
-          * *** ALTERAÇÕES ***
-          * 
-          * *** OBSERVAÇÕES ***
-          * - Adicionado o "logout.php", este obviamente faz o logout do usuário logado.
-          * - Revisar os seguintes arquivos:
-          *     index.php (funcionamento da page)
-          *     style.css (há um bug quando é efetuado login)
-          *     logout.php (não faz logout do usuário)
-          * - "img/perfil_blank.jpg" é a imagem usada por padrao para qualquer usuário logado (*TEMPORÁRIO*)
-          * - Alterar a estrutura do site! (importante)
-          *     
-          */
-
-         //verifica se há alguma sessão ativa e exibe um alert (apenas para efeito de teste)         
+	
+        //verifica se há alguma sessão ativa e exibe um alert (apenas para efeito de teste)         
         include "valida_cookies_index.inc";
  
  ?>
