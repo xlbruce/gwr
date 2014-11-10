@@ -1,0 +1,269 @@
+body {
+	background-color:black;
+	background-image: url("img/fundo2.jpg");
+	background-attachment: fixed;
+	}
+
+.principal {
+position: relative;
+background-color:#B1C392;
+width:1024px;
+height:768px;
+margin:auto;
+}
+
+.topo_flutuante {
+position:fixed;
+top:0;
+z-index:2000; /*mantem a div sempre no topo */
+width:1024px;
+height: 50px;
+background-color:274245;
+}
+
+.busca {
+float:right;
+padding: 12 20 0 0;
+}
+
+input[type=text],[type=password] {
+    border-radius: 2px;
+    border: none;
+    height: 30px;
+    margin: 4 0 0 0;
+}
+
+input[type=submit] {
+    height: 30px;
+    border-radius: 2px;
+    border:none;
+}
+
+.logo {
+float:left;
+padding: 12 0 0 20;
+/*width: 100px;*/
+height: 38px;
+margin-top: -12px;
+}
+
+
+header {
+background-color:D77A44;
+height: 170px;
+
+padding-top:50px;
+}
+
+header .slogan p {
+font-style:italic;
+font-weight:bold;
+}
+
+header .slogan {
+margin-left:50px;
+width:300px;
+float:left;
+}
+
+.login fieldset .bem_vindo {
+	margin-top: 4;
+	width: 150;
+	height: 20;
+	float: left;
+}
+
+.login fieldset .imagem_perfil {
+	width:120;
+	height:110;
+	float: left;
+}
+
+.login fieldset .logout {
+	margin-top: 90;
+}
+
+.login {
+float:right;
+width: 400px;
+margin-right: 15px;
+}
+
+.login fieldset {
+    padding: 0 0 30 10;    
+}
+
+.login p {
+	float: right;
+	margin-top: -100;
+}
+
+.login img {
+	width:100;
+	height:100;
+	padding: 5;
+}
+
+.login form {
+    float:left;
+    margin: 10;
+	height: 80;
+}
+
+nav ul li {
+display:inline;
+}
+nav {
+margin-top:135px;
+}
+a {
+text-decoration:none;
+color:black;
+font-weight:bold;
+/*padding: 1 15 1 10;*/
+}
+nav ul li .selected {
+background-color:DFD6AE;
+}
+nav ul li {
+padding: 5 10 0;
+margin-right:20px;
+border: solid 0px;
+border-radius: 6 6 0 0;
+background-color:DFD6AE;
+}
+#home{
+background-color: 274245;
+}
+
+.painel_principal {
+border:none;
+position:relative;
+width: 600px;
+height: 540px;
+background-color:DFD6AE;
+margin-left:40px;
+}
+.painel_sec {
+border:solid;
+margin-bottom:320px;
+margin-left:38px;
+height:200px;
+}
+.novo{
+font-size: 12px;
+
+}
+.duvida{
+margin-top:374px;
+}
+
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:25px;
+	-webkit-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+	
+	-moz-border-radius-bottomright:25px;
+	-webkit-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+	
+	-moz-border-radius-topright:25px;
+	-webkit-border-top-right-radius:25px;
+	border-top-right-radius:25px;
+	
+	-moz-border-radius-topleft:25px;
+	-webkit-border-top-left-radius:25px;
+	border-top-left-radius:25px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright:25px;
+	-webkit-border-bottom-right-radius:25px;
+	border-bottom-right-radius:25px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+	-moz-border-radius-topleft:25px;
+	-webkit-border-top-left-radius:25px;
+	border-top-left-radius:25px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+	-moz-border-radius-topright:25px;
+	-webkit-border-top-right-radius:25px;
+	border-top-right-radius:25px;
+}.CSSTableGenerator tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:25px;
+	-webkit-border-bottom-left-radius:25px;
+	border-bottom-left-radius:25px;
+}.CSSTableGenerator tr:hover td{
+	background-color:#ffffff;
+		
+
+}
+.CSSTableGenerator td{
+	vertical-align:middle;
+		background:-o-linear-gradient(bottom, #ffaa56 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffaa56), color-stop(1, #ffffff) ); 
+	background:-moz-linear-gradient( center top, #ffaa56 5%, #ffffff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaa56", endColorstr="#ffffff");	background: -o-linear-gradient(top,#ffaa56,ffffff);
+
+	background-color:#ffaa56;
+
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:12px;
+	font-size:10px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+	
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+	background:-o-linear-gradient(bottom, #ff7f00 5%, #ff7f00 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #ff7f00) );
+	background:-moz-linear-gradient( center top, #ff7f00 5%, #ff7f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#ff7f00");
+	background: -o-linear-gradient(top,#ff7f00,ff7f00);
+
+	background-color:#ff7f00;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #ff7f00 5%, #ff7f00 100%);	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #ff7f00) );
+	background:-moz-linear-gradient( center top, #ff7f00 5%, #ff7f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#ff7f00");
+	background: -o-linear-gradient(top,#ff7f00,ff7f00);
+
+	background-color:#ff7f00;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+.slogan{
+margin-top: -50px;
+}
+
