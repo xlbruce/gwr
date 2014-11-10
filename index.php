@@ -1,7 +1,7 @@
 <html>
 <?php 
 	
-        //verifica se há alguma sessão ativa e exibe um alert (apenas para efeito de teste)         
+             
         include "valida_cookies_index.inc";
  
  ?>
