@@ -1,7 +1,6 @@
 <html>
 <?php 
-	
-             
+	     
         include "valida_cookies_index.inc";
  
  ?>
@@ -46,7 +45,7 @@
 							<input type="text" placeholder="Usuário" name="username" required><br>
 							<input type="password" placeholder="*********" name="password" required>
 							<input type="submit" value="Entrar"><br>
-							<a href="javascript:void(0)" onClick="abre('Cadastro.php','frameBemVindo.html');setActive('forum')">Novo Usuário</a>
+							<a href="javascript:void(0)" onClick="abre('cadastro.php','frameBemVindo.html');setActive('forum')">Novo Usuário</a>
 						</form>
 					</fieldset>
                                         </div>

@@ -25,7 +25,7 @@
         setcookie("usuario", $usuario['nome']);
         setcookie("login", $login);
         setcookie("senha", $senha);
-        header("Location: index.php");
+        header("Location: index2.php");
         
     }
     

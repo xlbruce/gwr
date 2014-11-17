@@ -1,37 +1,12 @@
 <html>
     <?php
-    /* 23/10/2014 - 08:37
-      - Inicio da implementação do BD
-     */
-    /* 27/10/2014 - 16:12
-     * *** ALTERAÇÕES ***
-     *
-     * *** OBSERVAÇÕES ***
-     * - Revisar os seguintes arquivos:
-     *     index.php (funcionamento da page)
-     * - "img/perfil_blank.jpg" é a imagem usada por padrao para qualquer usuário logado (*TEMPORÁRIO*)
-     * - Alterar a estrutura do site! (importante)
-     *     
-     */
-    
-    /* 28/10/2014 - 20:17
-     * *** NOVIDADES ***
-     * - Implementado o sistema de cadastro
-     * - Corrigido o bug css quando o usuário efetuava login
-     * - Corrigida a funcionalidade da "logout.php"
-     */
-
-    //verifica se há alguma sessão ativa e exibe um alert (apenas para efeito de teste)         
     include "valida_cookies_index2.inc";
+    include 'connect.php';
     ?>
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <!--<style>
-        body {
-background-color:black;
-background-image: url("img/fundo2.jpg");}
-        </style>-->
+
 
         <script src="script.js"></script>
     </head>
@@ -65,17 +40,26 @@ background-image: url("img/fundo2.jpg");}
                             <img src="img/perfil_blank.jpg">
                         </div>
                         <div class="bem_vindo">
-                            Bem vindo(a) <?php 
-                            include "connect.php";
+                            Bem vindo(a) <?php
+                            require_once "connect.php";
                             $login = $_COOKIE['login'];
                             $senha = $_COOKIE['senha'];
                             $query = mysql_query("SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'");
                             $usuario = mysql_fetch_assoc($query);
-                            echo $usuario['nome'] . "<br>"; ?>
+                            echo $usuario['nome'] . "<br>";
+                            ?>
                         </div>
                         <div class="logout">
                             <a href="logout.php">Logout</a>
                         </div>
+                        <?php
+                        if ($_COOKIE['login'] == 'admin'):
+                            ?>
+                            <div class="admin">
+                                <a href="javascript:void(0)" onclick="window.open('/gilson/tw/projeto/admin.php?opcao=buscar')">Área administrativa</a>
+                            </div>
+                        <?php endif; ?>
+
 
                     </fieldset>
 
@@ -85,20 +69,20 @@ background-image: url("img/fundo2.jpg");}
                 <nav>
                     <ul>
                         <a href="javascript:void(0)" onClick="abre('home.html', 'frameBemVindo.html');
-                                                        setActive('home')"><li id="home" > Home</li></a>
+                                setActive('home')"><li id="home" > Home</li></a>
                         <a href="javascript:void(0)" onClick="abre('HTML.html', 'frameHTML.html');
-                                                        setActive('html')"><li id="html">HTML</li></a>
+                                setActive('html')"><li id="html">HTML</li></a>
                         <a href="javascript:void(0)" onClick="abre('PHP.html', 'framePHP.html');
-                                                        setActive('php')"><li id="php">PHP</li></a>
+                                setActive('php')"><li id="php">PHP</li></a>
                         <a href="javascript:void(0)" onClick="abre('duvidas.html', 'frameBemVindo.html');
-                                                        setActive('duvidas')"><li id="duvidas">Dúvidas</li></a>
+                                setActive('duvidas')"><li id="duvidas">Dúvidas</li></a>
                         <a href="javascript:void(0)" onClick="abre('forum.html', 'frameForum.html');
-                                                        setActive('forum')"><li id="forum">Forum</li></a>
+                                setActive('forum')"><li id="forum">Forum</li></a>
                         <ul>
                             </nav>
                             </header>
 
-                            <!-- INICIO DO CONTEÚDO !-->
+
                             <iframe src="home.html" class="painel_principal" name="painel_principal"></iframe>
                             <iframe src="frameBemVindo.html" class="painel_sec" name="painel_sec"></iframe>
 
